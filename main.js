@@ -16,12 +16,12 @@ const password3 = "like a BOSS";
 // and has at least one character before that, and `false` otherwise.
 
 function isValidEmail(email) {
-  if (email.length >= 20 && email.includes("@codeimmersives.com")) {
+  if (email.length >= 20 && email.endsWith("@codeimmersives.com")) {
     return true;
   } else return false;
 }
 
-const emailTest1 = isValidEmail("@codeimmersives.com");
+const emailTest1 = isValidEmail("d@codeimmersives.com");
 emailTest1;
 // `isValidPassword` - returns true if the given string is at least 8 characters with
 // a lower case and upper case letter, and false otherwise. Do not use Regular Expressions (regex).
